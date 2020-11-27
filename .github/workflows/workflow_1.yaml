@@ -18,8 +18,8 @@ jobs:
           with:
             java-version: 1.8
 
-        - name: Builds debug build
-          run: ./gradlew assembleDebug
+        - name: Builds release build
+          run: ./gradlew assembleRelease
 
         - name: Unit tests
-          run: ./gradlew testDebugUnitTest
+          run: ./gradlew testReleaseUnitTest
