@@ -19,7 +19,7 @@ jobs:
             java-version: 1.8
 
         - name: Builds release build
-          run: ./gradlew assembleRelease
+          run: ./gradlew app:assembleRelease
 
         - name: Unit tests
           run: ./gradlew testReleaseUnitTest
